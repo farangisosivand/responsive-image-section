@@ -45,10 +45,20 @@ img {
   width: 100%;
 }
 
+a {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+a:hover {
+  background-color: #e2e2e2;
+}
+
 @media only screen and (min-width: 25em) {
 
   .img-flex {
-    max-width: 50em;
+    display: block;
+    width: 100%;
   }
 
 }
@@ -68,6 +78,89 @@ img {
 
   body {
     max-width: 50em;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div {
+    width: 250px;
+    position: absolute;
+    left: 315px;
+    top: 100px;
+  }
+
+  h1, strong, p {
+    text-align: left;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  p {
+    text-align: left;
+    max-width: 50%;
+    margin-top: 0;
+  }
+
+  h1 {
+    padding-top: 3em;
+  }
+
+  div {
+    width: 500px;
+    position: absolute;
+    left: 720px;
+    top: 20px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1em;
+  }
+
+  header {
+    padding-left: 9.5em;
+    padding-top: 2em;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  p {
+    text-align: left;
+    max-width: 50%;
+    margin-top: 0;
+  }
+
+  h1 {
+    padding-top: 3em;
+  }
+
+  div {
+    width: 500px;
+    position: absolute;
+    left: 720px;
+    top: 20px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1em;
+  }
+
+  header {
+    padding-left: 9.5em;
+    padding-top: 2em;
   }
 
 }
